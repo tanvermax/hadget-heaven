@@ -1,27 +1,36 @@
 const Footer = () => {
   return (
-    <footer className="footer bg-neutral text-neutral-content grid-cols-3 p-10">
-      <nav>
-        <h6 className="footer-title">Services</h6>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
+    <>
+    <div className="py-5">
+      <h1 className="py-2 text-4xl font-bold text-center">Gadget Heaven</h1>
+      <p className="py-2  text-center text-base font-medium">Leading the way in cutting-edge technology and innovation.</p>
+    </div>
+    <hr />
+    <footer className="footer px-32 text-[#09080F99] text-base grid-cols-3 p-10 mx-auto">
+      <nav className="mx-auto text-center">
+        <h6 className="text-xl text-black mx-auto font-bold">Services</h6>
+
+        <a className="link link-hover mx-auto">Product Support</a>
+        <a className="link link-hover mx-auto">Order tracking</a>
+        <a className="link link-hover mx-auto">Shipping & Delivery</a>
+        <a className="link link-hover mx-auto">Returns</a>
       </nav>
-      <nav>
-        <h6 className="footer-title">Company</h6>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+      <nav className="mx-auto">
+        <h6 className="text-xl text-black mx-auto font-bold">Company</h6>
+        <a className="link link-hover mx-auto">About us</a>
+        <a className="link link-hover mx-auto">Career</a>
+        <a className="link link-hover mx-auto">Conact</a>
+        
       </nav>
-      <nav>
-        <h6 className="footer-title">Legal</h6>
-        <a className="link link-hover">Terms of use</a>
-        <a className="link link-hover">Privacy policy</a>
-        <a className="link link-hover">Cookie policy</a>
+      <nav className="mx-auto">
+        <h6 className="text-xl text-black mx-auto font-bold">Legal</h6>
+        <a className="link link-hover mx-auto">Terms of use</a>
+        <a className="link link-hover mx-auto">Privacy policy</a>
+        <a className="link link-hover mx-auto">Cookie policy</a>
       </nav>
     </footer>
+    </>
+
   );
 };
 

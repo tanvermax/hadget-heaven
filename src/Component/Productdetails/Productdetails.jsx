@@ -3,7 +3,7 @@ import Heading from "../Home/Pages/Heading";
 import { useEffect, useState } from "react";
 import { LuShoppingCart } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
-import Info from "./Info";
+
 
 const Productdetails = () => {
   const data = useLoaderData();
@@ -17,12 +17,12 @@ const Productdetails = () => {
   }, [data, id]);
   console.log(data, product);
 
-  const { title, image, price, specification, rating, in_stock, description } =
+  const { title, image, price, specification, rating, in_stock, description,manufacturer } =
     product;
 
   return (
     <>
-      <div className="bg-[#9538E2] -mt-10">
+      <div className="bg-[#9538E2] -mt-10 pb-40">
         <Heading
           title={"Product Details"}
           subtitle={
@@ -30,12 +30,13 @@ const Productdetails = () => {
           }
         ></Heading>
       </div>
-      <div className="hero">
+      <div className="hero relative -top-32 bg-white w-[1200px] mx-auto rounded-3xl ">
         <div className="hero-content flex-col lg:flex-row">
-          <img src={image} className="transition hover:scale-150 max-w-sm rounded-lg shadow-2xl" />
+          <img src={image} className="z-50 transition hover:scale-150 max-w-sm rounded-lg shadow-2xl" />
           <div className="flex flex-col gap-3">
             <h1 className="text-5xl font-bold"> {title}</h1>
             <p className="font-semibold text-base "> Price : $ {price}</p>
+            <p className="font-semibold text-base "> Manufacturer : {manufacturer}</p>
             <p>{in_stock}</p>
             <p>{description}</p>
             <p>

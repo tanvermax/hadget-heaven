@@ -3,7 +3,7 @@
     "id": "GAD001",
     "title": "UltraBook Pro Laptop",
     "image": "https://i.ibb.co.com/fvj1ctd/banner.jpg",
-    "category": "Computers",
+    "category": "Laptop",
     "price": 1200,
     "description": "Lightweight, high-performance laptop with 16GB RAM and 512GB SSD.",
     "specification": [
@@ -22,7 +22,7 @@
     "id": "GAD002",
     "title": "Gaming Laptop X9",
     "image": "https://i.ibb.co.com/5MKKqY1/earphones-with-case-surrounded-by-nature-scene.jpg",
-    "category": "Computers",
+    "category": "Laptop",
     "price": 1800,
     "description": "High-performance gaming laptop with RGB keyboard and powerful graphics.",
     "specification": [
@@ -60,7 +60,7 @@
     "id": "GAD004",
     "title": "Smartwatch FitPro 2",
     "image": "https://i.ibb.co.com/LCVhVGy/male-hand-clenched-into-fist-with-fitness-bracelet-training-progress-it-running-tracks-background.jpg",
-    "category": "Smart Watches",
+    "category": "Smart Watch",
     "price": 300,
     "description": "Fitness smartwatch with heart rate monitor and GPS tracking.",
     "specification": [
@@ -79,7 +79,7 @@
     "id": "GAD005",
     "title": "Phone Charger 30W",
     "image": "https://i.ibb.co.com/PCXPcCk/medium-shot-woman-wearing-headphones.jpg",
-    "category": "Chargers",
+    "category": "Accessories",
     "price": 50,
     "description": "Fast 30W charger compatible with multiple smartphone brands.",
     "specification": [
@@ -97,7 +97,7 @@
     "id": "GAD006",
     "title": "Power Bank 20000mAh",
     "image": "https://i.ibb.co.com/k5JTzC7/new-cell-phone-white-background.jpg",
-    "category": "Power Banks",
+    "category": "Accessories",
     "price": 80,
     "description": "High-capacity power bank with dual USB output for charging multiple devices.",
     "specification": [
@@ -134,7 +134,7 @@
     "id": "GAD008",
     "title": "Smartwatch Pro 3",
     "image": "https://i.ibb.co.com/ZfsdmnJ/pexels-pramodtiwari-17330220.jpg",
-    "category": "Smart Watches",
+    "category": "Smart Watch",
     "price": 250,
     "description": "Advanced smartwatch with health tracking and mobile notifications.",
     "specification": [
@@ -152,7 +152,7 @@
     "id": "GAD009",
     "title": "Wireless Charger Pad",
     "image": "https://i.ibb.co.com/wYRqKPk/png-power-bank-isolated-white-background.jpg",
-    "category": "Chargers",
+    "category": "Accessories",
     "price": 65,
     "description": "Sleek wireless charger pad with fast charging support for all devices.",
     "specification": [
@@ -170,7 +170,7 @@
     "id": "GAD010",
     "title": "Noise-Canceling Headphones",
     "image": "https://i.ibb.co.com/BBtqHfd/png-power-bank-isolated-white-background-1.jpg",
-    "category": "Headphones",
+    "category": "Accessories",
     "price": 200,
     "description": "High-quality headphones with active noise cancellation and long battery life.",
     "specification": ["Noise cancellation", "Wireless", "20-hour battery life"],
@@ -179,5 +179,138 @@
     "manufacturer": "AudioMax",
     "in_stock": false,
     "offer": "40% off"
+  },
+  {
+    "id": "GAD011",
+    "title": "UltraSlim Monitor 24\"",
+    "image": "https://i.ibb.co.com/BcDkBNp/333.jpg",
+    "category": "MacBook",
+    "price": 220,
+    "description": "Sleek 24-inch monitor with full HD display and ultra-thin bezels.",
+    "specification": [
+      "1920x1080 resolution",
+      "75Hz refresh rate",
+      "Ultra-thin bezels",
+      "Adjustable stand"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "manufacturer": "ViewMaster",
+    "in_stock": true,
+    "offer": "15% off"
+  },
+  {
+    "id": "GAD012",
+    "title": "Wireless Earbuds Pro",
+    "image": "https://i.ibb.co.com/f9Vg2kz/1111.webp",
+    "category": "Accessories",
+    "price": 150,
+    "description": "Compact wireless earbuds with immersive sound and noise isolation.",
+    "specification": [
+      "Bluetooth 5.2",
+      "Noise isolation",
+      "24-hour battery life with case",
+      "Water-resistant"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "manufacturer": "SoundCore",
+    "in_stock": true,
+    "offer": "20% off"
+  },
+  {
+    "id": "GAD013",
+    "title": "iPhone 13",
+    "image": "https://i.ibb.co.com/KqM8M6W/555.jpg",
+    "category": "iPhone",
+    "price": 800,
+    "description": "The iPhone 13 features a powerful A15 Bionic chip and an improved dual-camera system.",
+    "specification": [
+      "128GB storage",
+      "4GB RAM",
+      "6.1-inch display",
+      "Dual-camera system"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "manufacturer": "Apple",
+    "in_stock": true,
+    "offer": "10% off"
+  },
+  {
+    "id": "GAD014",
+    "title": "iPhone 14",
+    "image": "https://i.ibb.co.com/vQkf0cP/444.jpg",
+    "category": "iPhone",
+    "price": 900,
+    "description": "The iPhone 14 features an advanced A16 chip and improved battery life.",
+    "specification": [
+      "128GB storage",
+      "6GB RAM",
+      "6.1-inch display",
+      "Dual-camera system"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "manufacturer": "Apple",
+    "in_stock": true,
+    "offer": "5% off"
+  },
+  {
+    "id": "GAD015",
+    "title": "iPhone 15",
+    "image": "https://i.ibb.co.com/ZWKzHQ6/22222.webp",
+    "category": "iPhone",
+    "price": 1000,
+    "description": "The iPhone 15 features an innovative A17 chip and a stunning camera system.",
+    "specification": [
+      "256GB storage",
+      "6GB RAM",
+      "6.1-inch display",
+      "Triple-camera system"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "manufacturer": "Apple",
+    "in_stock": true,
+    "offer": "5% off"
+  },
+  {
+    "id": "GAD016",
+    "title": "MacBook Air M1",
+    "image": "https://i.ibb.co.com/Dz1tfVT/777.png",
+    "category": "MacBook",
+    "price": 999,
+    "description": "Lightweight and powerful MacBook Air with M1 chip for exceptional performance.",
+    "specification": [
+      "8GB RAM",
+      "256GB SSD",
+      "13.3-inch Retina display",
+      "Up to 18 hours battery life"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "manufacturer": "Apple",
+    "in_stock": true,
+    "offer": "10% off"
+  },
+  {
+    "id": "GAD017",
+    "title": "Smartphone OnePlus 9",
+    "image": "https://i.ibb.co.com/sQKNCgX/666.jpg",
+    "category": "Phones",
+    "price": 699,
+    "description": "Flagship smartphone with a fast Snapdragon processor and a stunning AMOLED display.",
+    "specification": [
+      "256GB storage",
+      "12GB RAM",
+      "6.55-inch AMOLED display",
+      "Triple camera setup"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "manufacturer": "OnePlus",
+    "in_stock": true,
+    "offer": "20% off"
   }
 ]

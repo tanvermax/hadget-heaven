@@ -11,6 +11,7 @@ import Static from "./Component/Static/Static";
 import Dashbord from "./Component/Dashbord/Dashbord";
 import Offer from "./Component/Offer/Offer";
 import Productdetails from "./Component/Productdetails/Productdetails";
+import Categories from "./Component/Categories/Categories";
 // import App from './App.jsx'
 
 const router = createBrowserRouter([
@@ -27,14 +28,24 @@ const router = createBrowserRouter([
         {
           path: '/',
           element:<Allgedgets></Allgedgets>,
-          loader:()=> fetch('../gadgets.json')
-        }
+          loader:()=> fetch('../gadgets.json'),
+        },
+        {
+          path:'/categories/:category',
+          element:<Categories></Categories>,
+          loader: ()=> fetch('../gadgets.json')
+        },
+        {
+          path:'./gedget/:id',
+          element: <Productdetails></Productdetails>,
+          loader: ()=> fetch('../gadgets.json')
+        },
       ]
       },
       {
         path:'/gedget/:id',
         element: <Productdetails></Productdetails>,
-        loader: ()=> fetch('./gadgets.json')
+        loader: ()=> fetch('../gadgets.json')
       },
       {
         path:'/static',

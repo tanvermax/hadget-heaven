@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 
 const Navber = () => {
   return (
-    <div className="navbar px-32 py-5 bg-[#9538E2] rounded-t-3xl ">
+    <div className="navbar px-32 py-5  bg-[#9538E2] rounded-t-3xl ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -45,18 +45,28 @@ const Navber = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <Link to={"/"}>
+          <NavLink
+            className={({ isActive }) =>
+              ` font-bold ${isActive ? "text-[#ffffff]" : "hover:text-warning"}`
+            }
+            to={"/"}
+          >
             <li className="px-5 text-base font-medium">Home</li>
-          </Link>
-          <Link to={"/static"}>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              `font-bold  ${isActive ? "text-white" : "hover:text-blue"}`
+            }
+            to={"/static"}
+          >
             <li className="px-5 text-base font-medium">Statics</li>
-          </Link>
-          <Link to={"/dashbord"}>
+          </NavLink>
+          <NavLink to={"/dashbord"}>
             <li className="px-5 text-base font-medium">Dashbord</li>
-          </Link>
-          <Link to={"/offer"}>
+          </NavLink>
+          <NavLink to={"/offer"}>
             <li className="px-5 text-base font-medium">Offer</li>
-          </Link>
+          </NavLink>
         </ul>
       </div>
       <div className="navbar-end gap-3">
