@@ -15,7 +15,7 @@ const Allcar = ({ gedget }) => {
         <p>Price : {price}K</p>
         
         <div className="card-actions justify-start">
-          <button className="btn border-blue-500 border-[2px]  transition hover:scale-105 ">Details</button>
+          <button className="btn rounded-3xl border-blue-500 border-[2px] text-base  transition hover:scale-105 text-[#9538E2]">View Details</button>
           
         </div>
       </div>
