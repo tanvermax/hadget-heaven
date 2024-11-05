@@ -1,0 +1,26 @@
+const Allcar = ({ gedget }) => {
+  const { title,image,price } = gedget;
+
+  
+  return (
+    <div className="card bg-base-100 w-96 shadow-xl  transition hover:scale-105">
+      <figure>
+        <img className="h-[250px] rounded-t-xl"
+          src={image}
+          alt="Shoes"
+        />
+      </figure>
+      <div className="card-body">
+        <h2 className="card-title">{title} </h2>
+        <p>Price : {price}K</p>
+        
+        <div className="card-actions justify-start">
+          <button className="btn border-blue-500 border-[2px]  transition hover:scale-105 ">Details</button>
+          
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Allcar;

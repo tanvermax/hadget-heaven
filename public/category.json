@@ -1,0 +1,26 @@
+[
+  {
+    "id": "GAD001",
+    "category": "Laptops"
+  },
+  {
+    "id": "GAD003",
+    "category": "Phones"
+  },
+  {
+    "id": "GAD004",
+    "category": "Smart Watches"
+  },
+  {
+    "id": "GAD005",
+    "category": "MacBook"
+  },
+  {
+    "id": "GAD007",
+    "category": "iPhone"
+  },
+  {
+    "id": "GAD009",
+    "category": "Accessories"
+  }
+]

@@ -1,0 +1,195 @@
+[
+  {
+    "id": "GAD001",
+    "title": "UltraBook Pro Laptop",
+    "image":" https://i.ibb.co.com/fvj1ctd/banner.jpg",
+    "category": "Computers",
+    "price": 1200,
+    "description": "Lightweight, high-performance laptop with 16GB RAM and 512GB SSD.",
+    "specification": [
+      "16GB RAM",
+      "512GB SSD",
+      "13.3-inch display",
+      "Intel i7 processor"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "manufacturer": "TechMaster"
+  },
+  {
+    "id": "GAD002",
+    "title": "Gaming Laptop X9",
+    "image": "https://i.ibb.co.com/5MKKqY1/earphones-with-case-surrounded-by-nature-scene.jpg",
+    "category": "Computers",
+    "price": 1800,
+    "description": "High-performance gaming laptop with RGB keyboard and powerful graphics.",
+    "specification": [
+      "32GB RAM",
+      "1TB SSD",
+      "15.6-inch display",
+      "NVIDIA GTX 3080"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "manufacturer": "PowerTech"
+  },
+  {
+    "id": "GAD003",
+    "title": "Smartphone Galaxy A7",
+    "image": " https://i.ibb.co.com/p3nDyGQ/images.jpg",
+    "category": "Phones",
+    "price": 750,
+    "description": "5G enabled smartphone with a high-resolution camera and long battery life.",
+    "specification": [
+      "128GB storage",
+      "8GB RAM",
+      "6.5-inch display",
+      "Triple camera setup"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "manufacturer": "Galaxy Corp."
+  },
+  {
+    "id": "GAD004",
+    "title": "Smartwatch FitPro 2",
+    "image": "https://i.ibb.co.com/LCVhVGy/male-hand-clenched-into-fist-with-fitness-bracelet-training-progress-it-running-tracks-background.jpg",
+    "category": "Smart Watches",
+    "price": 300,
+    "description": "Fitness smartwatch with heart rate monitor and GPS tracking.",
+    "specification": [
+      "Heart rate monitor",
+      "GPS",
+      "Water resistant",
+      "Long battery life"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "manufacturer": "FitPro Inc."
+  },
+  {
+    "id": "GAD005",
+    "title": "Phone Charger 30W",
+    "image": " https://i.ibb.co.com/PCXPcCk/medium-shot-woman-wearing-headphones.jpg",
+    "category": "Chargers",
+    "price": 50,
+    "description": "Fast 30W charger compatible with multiple smartphone brands.",
+    "specification": [
+      "30W output",
+      "USB-C compatibility",
+      "Overheat protection"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "manufacturer": "ChargeTech"
+  },
+  {
+    "id": "GAD006",
+    "title": "Power Bank 20000mAh",
+    "image": "https://i.ibb.co.com/k5JTzC7/new-cell-phone-white-background.jpg",
+    "category": "Power Banks",
+    "price": 80,
+    "description": "High-capacity power bank with dual USB output for charging multiple devices.",
+    "specification": [
+      "20000mAh capacity",
+      "Dual USB output",
+      "Fast charging support"
+    ],
+    "availability": false,
+    "rating": 4.3,
+    "manufacturer": "PowerMax"
+  },
+  {
+    "id": "GAD007",
+    "title": "Foldable Smartphone X",
+    "image": "https://i.ibb.co.com/VtQXbC3/pexels-craigmdennis-205421.jpg",
+    "category": "Phones",
+    "price": 1300,
+    "description": "Innovative foldable smartphone with dual displays and advanced camera.",
+    "specification": [
+      "256GB storage",
+      "12GB RAM",
+      "Foldable dual display",
+      "5G enabled"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "manufacturer": "InnovateTech"
+  },
+  {
+    "id": "GAD008",
+    "title": "Smartwatch Pro 3",
+    "image": "https://i.ibb.co.com/ZfsdmnJ/pexels-pramodtiwari-17330220.jpg",
+    "category": "Smart Watches",
+    "price": 250,
+    "description": "Advanced smartwatch with health tracking and mobile notifications.",
+    "specification": [
+      "Blood oxygen sensor",
+      "GPS",
+      "Call and message notifications"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "manufacturer": "TimeWare"
+  },
+  {
+    "id": "GAD009",
+    "title": "Wireless Charger Pad",
+    "image": "https://i.ibb.co.com/wYRqKPk/png-power-bank-isolated-white-background.jpg",
+    "category": "Chargers",
+    "price": 65,
+    "description": "Sleek wireless charger pad with fast charging support for all devices.",
+    "specification": [
+      "Wireless charging",
+      "15W fast charge",
+      "Non-slip surface"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "manufacturer": "PowerHub"
+  },
+  {
+    "id": "GAD010",
+    "title": "Noise-Canceling Headphones",
+    "image": "    https://i.ibb.co.com/BBtqHfd/png-power-bank-isolated-white-background-1.jpg",
+    "category": "Headphones",
+    "price": 200,
+    "description": "High-quality headphones with active noise cancellation and long battery life.",
+    "specification": ["Noise cancellation", "Wireless", "20-hour battery life"],
+    "availability": true,
+    "rating": 4.7,
+    "manufacturer": "AudioMax"
+  },
+  {
+    "id": "GAD011",
+    "title": "Compact Power Bank 10000mAh",
+    "image": "https://i.ibb.co.com/Mf41XHY/smartwatch-with-digital-assistant-arrangement.jpg",
+    "category": "Power Banks",
+    "price": 60,
+    "description": "Portable and slim power bank for on-the-go charging.",
+    "specification": [
+      "10000mAh capacity",
+      "Quick charge support",
+      "Lightweight design"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "manufacturer": "ChargeEase"
+  },
+  {
+    "id": "GAD012",
+    "title": "Wireless Earbuds Pro",
+    "image": "https://i.ibb.co.com/Lnr8tCx/top-view-internet-communication-network-with-smartphone.jpg",
+    "category": "Headphones",
+    "price": 150,
+    "description": "High-quality wireless earbuds with noise reduction and touch controls.",
+    "specification": [
+      "Noise reduction",
+      "Bluetooth 5.0",
+      "24-hour battery life"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "manufacturer": "SoundWave"
+  }
+]
