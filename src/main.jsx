@@ -6,10 +6,11 @@ import Mainlayout from "./Component/MainLayout/Mainlayout";
 import Home from "./Component/Home/Home";
 
 import Allgedgets from "./Component/Allcategory/Allgedgets";
-import Allcat from "./Component/Allcategory/Allcat";
+
 import Static from "./Component/Static/Static";
 import Dashbord from "./Component/Dashbord/Dashbord";
 import Offer from "./Component/Offer/Offer";
+import Productdetails from "./Component/Productdetails/Productdetails";
 // import App from './App.jsx'
 
 const router = createBrowserRouter([
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
           loader:()=> fetch('../gadgets.json')
         }
       ]
+      },
+      {
+        path:'/gedget/:id',
+        element: <Productdetails></Productdetails>,
+        loader: ()=> fetch('./gadgets.json')
       },
       {
         path:'/static',

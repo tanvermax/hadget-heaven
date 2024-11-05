@@ -2,7 +2,7 @@
   {
     "id": "GAD001",
     "title": "UltraBook Pro Laptop",
-    "image":" https://i.ibb.co.com/fvj1ctd/banner.jpg",
+    "image": "https://i.ibb.co.com/fvj1ctd/banner.jpg",
     "category": "Computers",
     "price": 1200,
     "description": "Lightweight, high-performance laptop with 16GB RAM and 512GB SSD.",
@@ -14,7 +14,9 @@
     ],
     "availability": true,
     "rating": 4.6,
-    "manufacturer": "TechMaster"
+    "manufacturer": "TechMaster",
+    "in_stock": true,
+    "offer": "20% off"
   },
   {
     "id": "GAD002",
@@ -31,12 +33,14 @@
     ],
     "availability": true,
     "rating": 4.8,
-    "manufacturer": "PowerTech"
+    "manufacturer": "PowerTech",
+    "in_stock": false,
+    "offer": "30% off"
   },
   {
     "id": "GAD003",
     "title": "Smartphone Galaxy A7",
-    "image": " https://i.ibb.co.com/p3nDyGQ/images.jpg",
+    "image": "https://i.ibb.co.com/p3nDyGQ/images.jpg",
     "category": "Phones",
     "price": 750,
     "description": "5G enabled smartphone with a high-resolution camera and long battery life.",
@@ -48,7 +52,9 @@
     ],
     "availability": true,
     "rating": 4.5,
-    "manufacturer": "Galaxy Corp."
+    "manufacturer": "Galaxy Corp.",
+    "in_stock": true,
+    "offer": "15% off"
   },
   {
     "id": "GAD004",
@@ -65,12 +71,14 @@
     ],
     "availability": true,
     "rating": 4.4,
-    "manufacturer": "FitPro Inc."
+    "manufacturer": "FitPro Inc.",
+    "in_stock": true,
+    "offer": "10% off"
   },
   {
     "id": "GAD005",
     "title": "Phone Charger 30W",
-    "image": " https://i.ibb.co.com/PCXPcCk/medium-shot-woman-wearing-headphones.jpg",
+    "image": "https://i.ibb.co.com/PCXPcCk/medium-shot-woman-wearing-headphones.jpg",
     "category": "Chargers",
     "price": 50,
     "description": "Fast 30W charger compatible with multiple smartphone brands.",
@@ -81,7 +89,9 @@
     ],
     "availability": true,
     "rating": 4.2,
-    "manufacturer": "ChargeTech"
+    "manufacturer": "ChargeTech",
+    "in_stock": false,
+    "offer": "25% off"
   },
   {
     "id": "GAD006",
@@ -97,7 +107,9 @@
     ],
     "availability": false,
     "rating": 4.3,
-    "manufacturer": "PowerMax"
+    "manufacturer": "PowerMax",
+    "in_stock": true,
+    "offer": "50% off"
   },
   {
     "id": "GAD007",
@@ -114,7 +126,9 @@
     ],
     "availability": true,
     "rating": 4.7,
-    "manufacturer": "InnovateTech"
+    "manufacturer": "InnovateTech",
+    "in_stock": true,
+    "offer": "20% off"
   },
   {
     "id": "GAD008",
@@ -130,7 +144,9 @@
     ],
     "availability": true,
     "rating": 4.6,
-    "manufacturer": "TimeWare"
+    "manufacturer": "TimeWare",
+    "in_stock": false,
+    "offer": "15% off"
   },
   {
     "id": "GAD009",
@@ -146,50 +162,22 @@
     ],
     "availability": true,
     "rating": 4.5,
-    "manufacturer": "PowerHub"
+    "manufacturer": "PowerHub",
+    "in_stock": true,
+    "offer": "30% off"
   },
   {
     "id": "GAD010",
     "title": "Noise-Canceling Headphones",
-    "image": "    https://i.ibb.co.com/BBtqHfd/png-power-bank-isolated-white-background-1.jpg",
+    "image": "https://i.ibb.co.com/BBtqHfd/png-power-bank-isolated-white-background-1.jpg",
     "category": "Headphones",
     "price": 200,
     "description": "High-quality headphones with active noise cancellation and long battery life.",
     "specification": ["Noise cancellation", "Wireless", "20-hour battery life"],
     "availability": true,
     "rating": 4.7,
-    "manufacturer": "AudioMax"
-  },
-  {
-    "id": "GAD011",
-    "title": "Compact Power Bank 10000mAh",
-    "image": "https://i.ibb.co.com/Mf41XHY/smartwatch-with-digital-assistant-arrangement.jpg",
-    "category": "Power Banks",
-    "price": 60,
-    "description": "Portable and slim power bank for on-the-go charging.",
-    "specification": [
-      "10000mAh capacity",
-      "Quick charge support",
-      "Lightweight design"
-    ],
-    "availability": true,
-    "rating": 4.4,
-    "manufacturer": "ChargeEase"
-  },
-  {
-    "id": "GAD012",
-    "title": "Wireless Earbuds Pro",
-    "image": "https://i.ibb.co.com/Lnr8tCx/top-view-internet-communication-network-with-smartphone.jpg",
-    "category": "Headphones",
-    "price": 150,
-    "description": "High-quality wireless earbuds with noise reduction and touch controls.",
-    "specification": [
-      "Noise reduction",
-      "Bluetooth 5.0",
-      "24-hour battery life"
-    ],
-    "availability": true,
-    "rating": 4.5,
-    "manufacturer": "SoundWave"
+    "manufacturer": "AudioMax",
+    "in_stock": false,
+    "offer": "40% off"
   }
 ]

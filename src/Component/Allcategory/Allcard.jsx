@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 const Allcar = ({ gedget }) => {
-  const { title,image,price } = gedget;
+  const { title,image,price,id } = gedget;
 
   
   return (
-    <div className="card bg-base-100 w-96 shadow-xl  transition hover:scale-105">
+    <Link to={`gedget/${id}`} className="card bg-base-100 w-96 shadow-xl  transition hover:scale-105">
       <figure>
         <img className="h-[250px] rounded-t-xl"
           src={image}
@@ -19,7 +21,7 @@ const Allcar = ({ gedget }) => {
           
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
