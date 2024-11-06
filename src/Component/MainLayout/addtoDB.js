@@ -1,3 +1,5 @@
+import {  toast } from 'react-toastify';
+
 const getstoredeWiselist = () => {
     // realisdt
     const storedlist = localStorage.getItem('wise-list');
@@ -17,41 +19,48 @@ const addtostoredlist = (id) => {
 
     const storedlist = getstoredeWiselist();
     if (storedlist.includes(id)) {
-        console.log(id, "already exit");
+        toast.warn( "already exit");
+        console.log();
 
     }
     else {
         storedlist.push(id);
         const storedliststr = JSON.stringify(storedlist);
-        localStorage.setItem('wise-list', storedliststr)
+        localStorage.setItem('wise-list', storedliststr);
+        toast.success( "Added");
+
     }
 }
 
 
-const getStoredCartList= ()=>{
- const CartList= localStorage.getItem('cart-list');
- if (CartList) {
-    const parsecartlist = JSON.parse(CartList);
-    return parsecartlist;   
- }
- else{
-    return [];
- }
+const getStoredCartList = () => {
+    const CartList = localStorage.getItem('cart-list');
+    if (CartList) {
+        const parsecartlist = JSON.parse(CartList);
+        return parsecartlist;
+    }
+    else {
+        return []
+    }
 }
 
 
-const addtoCartList= (id)=>{
+const addtoCartList = (id) => {
 
-    const storedcartlist = getstoredeWiselist();
+    const storedcartlist = getStoredCartList();
+ 
     if (storedcartlist.includes(id)) {
-        console.log(id,'alredy exit');
+        toast.warn( "already exit");
         
+
     }
-else{
-    storedcartlist.push(id);
-    const storedcartlistStr = JSON.stringify(storedcartlist);
-    localStorage.setItem('cart-list',storedcartlistStr)
-}
+    else {
+        storedcartlist.push(id);
+
+        const storedcartlistStr = JSON.stringify(storedcartlist);
+        localStorage.setItem('cart-list', storedcartlistStr)
+        toast.success( "Added");
+    }
 }
 
-export { addtostoredlist,getstoredeWiselist,getStoredCartList,addtoCartList }
+export { addtostoredlist, getstoredeWiselist, getStoredCartList, addtoCartList }

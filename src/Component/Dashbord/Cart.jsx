@@ -8,6 +8,8 @@ const Cart = () => {
   const [showlist, setShowlist] = useState([]);
   const cartproduct = useLoaderData();
 
+
+
   useEffect(() => {
     const storedcartlist = getStoredCartList();
     const storedcartlistInt = storedcartlist.map((id) => parseInt(id));
@@ -16,7 +18,13 @@ const Cart = () => {
       storedcartlistInt.includes(parseInt(cart.id))
     );
     setShowlist(cartlist);
+
+   
   }, [cartproduct]);
+
+
+const totalCost = showlist.reduce((acc, product) => acc + parseFloat(product.price), 0).toFixed(2);
+
 
   return (
     <>
@@ -25,7 +33,7 @@ const Cart = () => {
           <h1 className="text-2xl font-bold">Cart</h1>
         </div>
         <div className="text-xl  flex gap-5 items-center">
-          <h1 className="text-2xl  font-semibold">Total Cost : 12000$ </h1>
+          <h1 className="text-2xl  font-semibold">Total Cost :{totalCost} $ </h1>
           <button className="border-fuchsia-600 font-medium flex items-center gap-2 border-[2px] p-3 rounded-[30px] dropdown">
             Sort Price{" "}
             <HiMiniAdjustmentsVertical className="text-fuchsia-600 " />
@@ -37,7 +45,7 @@ const Cart = () => {
       </div>
       <div className="border-2 rounded-xl p-5 mx-36">
         {showlist.map((gedget) => (
-          <Card key={gedget.id} gedget={gedget}></Card>
+          <Card key={gedget.id}  gedget={gedget}></Card>
         ))}
       </div>
     </>

@@ -33,12 +33,20 @@ const Productdetails = () => {
     manufacturer,
   } = product;
 
+const [newp,setNewp]= useState(0);
+
+const handlmoney= ()=>{
+  let newmoney= newp+price;
+  setNewp(newmoney)
+}
 
   const handlecardlist = (id) => {
     console.log("addding soon");
     
     handleCart();
     addtoCartList(id);
+    handlmoney()
+   
   };
 
   const [chosses, setChoose] = useContext(Context);
@@ -46,15 +54,6 @@ const Productdetails = () => {
     const afterChosse = chosses + 1;
     setChoose(afterChosse);
   };
-
-  //   const [wise, setWise] = useContext(Context);
-  //   const handlewise = () => {
-  //     console.log("hgiosdoi");
-
-  //     const afterwise = wise + 1;
-  //     setWise(afterwise);
-  //   };
-  // console.log(wise);
 
 
 
@@ -87,7 +86,7 @@ const Productdetails = () => {
             <p className="font-semibold text-base "> Price : $ {price}</p>
 
             {/* <MyContext.provider value={{chosses,setChoose}} > */}
-            <p className="font-semibold text-base "> Price : $ </p>
+            <p className="font-semibold text-base "> Price : {newp}$ </p>
             {/* </MyContext.provider> */}
 
             <p className="font-semibold text-base ">
@@ -141,10 +140,10 @@ const Productdetails = () => {
             </div>
             <div className="flex gap-5">
               <button
-                onClick={()=>handlecardlist(id)}
+                onClick={()=>handlecardlist(id,price)}
                 className="btn btn-primary transition hover:scale-105"
               >
-                Add To Card
+                Add To Cart
                 <LuShoppingCart />
               </button>
               <button

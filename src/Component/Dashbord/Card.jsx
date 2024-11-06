@@ -9,7 +9,7 @@ const Card = ({ gedget }) => {
         <div className=" grid grid-rows-3 py-5">
           <p className="text-2xl font-semibold">{title}</p>
           <p className="text-gray-500">{description}</p>
-          <p className=" text-xl font-semibold">Price :{title}$</p>
+          <p className=" text-xl font-semibold">Price :{price}$</p>
         </div>
       </div>
       <div className="text-right items-end ">

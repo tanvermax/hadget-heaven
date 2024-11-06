@@ -1,5 +1,6 @@
 // import React from 'react';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Outlet } from "react-router-dom";
 
 import Footer from "../Routes/Footer";
@@ -11,10 +12,7 @@ export const Context = createContext();
 const Mainlayout = () => {
   const [chosses, setChoose] = useState(0);
 
-// const [caritem, setCartitem]= useState([]);
-// handleaddtocart= (item)=>{
-//   setCartitem(preItem)=>
-// }
+
   
   return (
     <Context.Provider value={[chosses, setChoose]}>
@@ -26,6 +24,7 @@ const Mainlayout = () => {
         <Outlet ></Outlet>
         <Footer></Footer>
       </div>
+      <ToastContainer />
     </Context.Provider>
   );
 };
