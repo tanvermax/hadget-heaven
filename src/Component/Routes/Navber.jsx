@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 
-const Navber = ({ chosses }) => {
+const Navber = ({chosses}) => {
   return (
     <div className="navbar px-32 py-5  bg-[#9538E2] rounded-t-3xl ">
       <div className="navbar-start">

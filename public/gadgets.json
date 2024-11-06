@@ -1,6 +1,6 @@
 [
   {
-    "id": "GAD001",
+    "id": "1",
     "title": "UltraBook Pro Laptop",
     "image": "https://i.ibb.co.com/fvj1ctd/banner.jpg",
     "category": "Laptop",
@@ -19,7 +19,7 @@
     "offer": "20% off"
   },
   {
-    "id": "GAD002",
+    "id": "2",
     "title": "Gaming Laptop X9",
     "image": "https://i.ibb.co.com/5MKKqY1/earphones-with-case-surrounded-by-nature-scene.jpg",
     "category": "Laptop",
@@ -38,7 +38,7 @@
     "offer": "30% off"
   },
   {
-    "id": "GAD003",
+    "id": "3",
     "title": "Smartphone Galaxy A7",
     "image": "https://i.ibb.co.com/p3nDyGQ/images.jpg",
     "category": "Phones",
@@ -57,7 +57,7 @@
     "offer": "15% off"
   },
   {
-    "id": "GAD004",
+    "id": "4",
     "title": "Smartwatch FitPro 2",
     "image": "https://i.ibb.co.com/LCVhVGy/male-hand-clenched-into-fist-with-fitness-bracelet-training-progress-it-running-tracks-background.jpg",
     "category": "Smart Watch",
@@ -76,7 +76,7 @@
     "offer": "10% off"
   },
   {
-    "id": "GAD005",
+    "id": "5",
     "title": "Phone Charger 30W",
     "image": "https://i.ibb.co.com/PCXPcCk/medium-shot-woman-wearing-headphones.jpg",
     "category": "Accessories",
@@ -94,7 +94,7 @@
     "offer": "25% off"
   },
   {
-    "id": "GAD006",
+    "id": "6",
     "title": "Power Bank 20000mAh",
     "image": "https://i.ibb.co.com/k5JTzC7/new-cell-phone-white-background.jpg",
     "category": "Accessories",
@@ -112,7 +112,7 @@
     "offer": "50% off"
   },
   {
-    "id": "GAD007",
+    "id": "7",
     "title": "Foldable Smartphone X",
     "image": "https://i.ibb.co.com/VtQXbC3/pexels-craigmdennis-205421.jpg",
     "category": "Phones",
@@ -131,7 +131,7 @@
     "offer": "20% off"
   },
   {
-    "id": "GAD008",
+    "id": "8",
     "title": "Smartwatch Pro 3",
     "image": "https://i.ibb.co.com/ZfsdmnJ/pexels-pramodtiwari-17330220.jpg",
     "category": "Smart Watch",
@@ -149,7 +149,7 @@
     "offer": "15% off"
   },
   {
-    "id": "GAD009",
+    "id": "9",
     "title": "Wireless Charger Pad",
     "image": "https://i.ibb.co.com/wYRqKPk/png-power-bank-isolated-white-background.jpg",
     "category": "Accessories",
@@ -167,7 +167,7 @@
     "offer": "30% off"
   },
   {
-    "id": "GAD010",
+    "id": "10",
     "title": "Noise-Canceling Headphones",
     "image": "https://i.ibb.co.com/BBtqHfd/png-power-bank-isolated-white-background-1.jpg",
     "category": "Accessories",
@@ -181,7 +181,7 @@
     "offer": "40% off"
   },
   {
-    "id": "GAD011",
+    "id": "11",
     "title": "UltraSlim Monitor 24\"",
     "image": "https://i.ibb.co.com/BcDkBNp/333.jpg",
     "category": "MacBook",
@@ -200,7 +200,7 @@
     "offer": "15% off"
   },
   {
-    "id": "GAD012",
+    "id": "12",
     "title": "Wireless Earbuds Pro",
     "image": "https://i.ibb.co.com/f9Vg2kz/1111.webp",
     "category": "Accessories",
@@ -219,7 +219,7 @@
     "offer": "20% off"
   },
   {
-    "id": "GAD013",
+    "id": "13",
     "title": "iPhone 13",
     "image": "https://i.ibb.co.com/KqM8M6W/555.jpg",
     "category": "iPhone",
@@ -238,7 +238,7 @@
     "offer": "10% off"
   },
   {
-    "id": "GAD014",
+    "id": "14",
     "title": "iPhone 14",
     "image": "https://i.ibb.co.com/vQkf0cP/444.jpg",
     "category": "iPhone",
@@ -257,7 +257,7 @@
     "offer": "5% off"
   },
   {
-    "id": "GAD015",
+    "id": "15",
     "title": "iPhone 15",
     "image": "https://i.ibb.co.com/ZWKzHQ6/22222.webp",
     "category": "iPhone",
@@ -276,7 +276,7 @@
     "offer": "5% off"
   },
   {
-    "id": "GAD016",
+    "id": "16",
     "title": "MacBook Air M1",
     "image": "https://i.ibb.co.com/Dz1tfVT/777.png",
     "category": "MacBook",
@@ -295,7 +295,7 @@
     "offer": "10% off"
   },
   {
-    "id": "GAD017",
+    "id": "17",
     "title": "Smartphone OnePlus 9",
     "image": "https://i.ibb.co.com/sQKNCgX/666.jpg",
     "category": "Phones",

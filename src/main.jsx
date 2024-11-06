@@ -63,6 +63,7 @@ const router = createBrowserRouter([
           {
             path: "wiselist",
             element: <Wiselist></Wiselist>,
+            loader: ()=> fetch("../gadgets.json"),
           },
         ]
       },

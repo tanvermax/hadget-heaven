@@ -1,15 +1,13 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Heading from "../Home/Pages/Heading";
-import {  useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { LuShoppingCart } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
 
-
 import { Context } from "../MainLayout/Mainlayout";
-
+import { addtostoredlist } from "../MainLayout/addtoDB";
 
 const Productdetails = () => {
-
   const data = useLoaderData();
 
   const { id } = useParams();
@@ -21,9 +19,10 @@ const Productdetails = () => {
     setProduct(singledata);
   }, [data, id]);
 
-  console.log(data, product);
+  // console.log(data, product);
 
   const {
+    
     title,
     image,
     price,
@@ -34,16 +33,34 @@ const Productdetails = () => {
     manufacturer,
   } = product;
 
+  const [cart, setCart] = useState([]);
+  const handlecardlist = (blog) => {
+    console.log("addding soon");
+
+    handleCart();
+  };
+
   const [chosses, setChoose] = useContext(Context);
   const handleCart = () => {
     const afterChosse = chosses + 1;
     setChoose(afterChosse);
-    console.log(afterChosse);
-   
-    
   };
 
-  
+  //   const [wise, setWise] = useContext(Context);
+  //   const handlewise = () => {
+  //     console.log("hgiosdoi");
+
+  //     const afterwise = wise + 1;
+  //     setWise(afterwise);
+  //   };
+  // console.log(wise);
+
+
+
+  const handleWise=(id)=>{
+    addtostoredlist(id)
+  }
+
   return (
     <>
       <div className="bg-[#9538E2] -mt-10 pb-40">
@@ -64,11 +81,11 @@ const Productdetails = () => {
           </div>
           <div className="flex flex-col gap-3">
             <h1 className="text-5xl font-bold"> {title}</h1>
-          
-           <p className="font-semibold text-base "> Price : $ {price}</p>
-        
+
+            <p className="font-semibold text-base "> Price : $ {price}</p>
+
             {/* <MyContext.provider value={{chosses,setChoose}} > */}
-            <p className="font-semibold text-base "> Price : $ {chosses}</p>
+            <p className="font-semibold text-base "> Price : $ </p>
             {/* </MyContext.provider> */}
 
             <p className="font-semibold text-base ">
@@ -122,13 +139,16 @@ const Productdetails = () => {
             </div>
             <div className="flex gap-5">
               <button
-                onClick={handleCart}
+                onClick={handlecardlist}
                 className="btn btn-primary transition hover:scale-105"
               >
                 Add To Card
                 <LuShoppingCart />
               </button>
-              <button className="transition hover:scale-105 btn text-xl rounded-full">
+              <button
+                onClick={()=>handleWise(id)}
+                className="transition hover:scale-105 btn text-xl rounded-full"
+              >
                 <CiHeart />
               </button>
             </div>

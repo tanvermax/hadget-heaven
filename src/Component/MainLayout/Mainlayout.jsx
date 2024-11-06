@@ -11,6 +11,11 @@ export const Context = createContext();
 const Mainlayout = () => {
   const [chosses, setChoose] = useState(0);
 
+// const [caritem, setCartitem]= useState([]);
+// handleaddtocart= (item)=>{
+//   setCartitem(preItem)=>
+// }
+  
   return (
     <Context.Provider value={[chosses, setChoose]}>
       <div className="">
@@ -18,7 +23,7 @@ const Mainlayout = () => {
           <Navber chosses={chosses}></Navber>
           <h1>{chosses}</h1>
         </div>
-        <Outlet></Outlet>
+        <Outlet ></Outlet>
         <Footer></Footer>
       </div>
     </Context.Provider>

@@ -23,7 +23,7 @@ const Categories = () => {
       <div className="grid grid-cols-3 p-5 gap-5 ">
         {catego.map((gedget) => (
             
-          <Allcard key={gedget.id} gedget={gedget}></Allcard>
+          <Allcard  key={gedget.id} gedget={gedget}></Allcard>
         ))}
       </div>
     </div>
