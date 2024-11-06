@@ -1,5 +1,5 @@
 // import React from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Outlet } from "react-router-dom";
 
@@ -19,7 +19,7 @@ const Mainlayout = () => {
       <div className="">
         <div className="px-10 pt-5">
           <Navber chosses={chosses}></Navber>
-          <h1>{chosses}</h1>
+          
         </div>
         <Outlet ></Outlet>
         <Footer></Footer>
