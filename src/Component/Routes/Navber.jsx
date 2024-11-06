@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 
-const Navber = () => {
+const Navber = ({ chosses }) => {
   return (
     <div className="navbar px-32 py-5  bg-[#9538E2] rounded-t-3xl ">
       <div className="navbar-start">
@@ -55,16 +55,28 @@ const Navber = () => {
           </NavLink>
           <NavLink
             className={({ isActive }) =>
-              `font-bold  ${isActive ? "text-white" : "hover:text-blue"}`
+              `font-bold hover:text-blue  ${
+                isActive ? "text-white" : "hover:text-blue"
+              }`
             }
             to={"/static"}
           >
             <li className="px-5 text-base font-medium">Statics</li>
           </NavLink>
-          <NavLink to={"/dashbord"}>
+          <NavLink
+            className={({ isActive }) =>
+              `hover:text-blue-700 ${isActive ? "text-white" : ""}`
+            }
+            to={"/dashbord"}
+          >
             <li className="px-5 text-base font-medium">Dashbord</li>
           </NavLink>
-          <NavLink to={"/offer"}>
+          <NavLink
+            className={({ isActive }) =>
+              `hover:text-blue-700 ${isActive ? "text-white" : ""}`
+            }
+            to={"/offer"}
+          >
             <li className="px-5 text-base font-medium">Offer</li>
           </NavLink>
         </ul>
@@ -72,6 +84,9 @@ const Navber = () => {
       <div className="navbar-end gap-3">
         <button className="btn btn-ghost btn-circle bg-white text-2xl">
           <IoCartOutline />
+          <div className="indicator  relative -top-3">
+            <span className="badge badge-sm p-2 badge-primary indicator-item">{chosses}</span>
+          </div>
         </button>
         <button className="btn btn-ghost btn-circle bg-white text-2xl">
           <div className="indicator">
@@ -85,3 +100,6 @@ const Navber = () => {
 };
 
 export default Navber;
+{
+  /* <IoCartOutline /> */
+}

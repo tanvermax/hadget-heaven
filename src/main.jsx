@@ -12,6 +12,8 @@ import Dashbord from "./Component/Dashbord/Dashbord";
 import Offer from "./Component/Offer/Offer";
 import Productdetails from "./Component/Productdetails/Productdetails";
 import Categories from "./Component/Categories/Categories";
+import Cart from "./Component/Dashbord/Cart";
+import Wiselist from "./Component/Dashbord/Wiselist";
 // import App from './App.jsx'
 
 const router = createBrowserRouter([
@@ -23,44 +25,52 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
         loader: () => fetch("../category.json"),
-      children:
-      [
-        {
-          path: '/',
-          element:<Allgedgets></Allgedgets>,
-          loader:()=> fetch('../gadgets.json'),
-        },
-        {
-          path:'/categories/:category',
-          element:<Categories></Categories>,
-          loader: ()=> fetch('../gadgets.json')
-        },
-        {
-          path:'./gedget/:id',
-          element: <Productdetails></Productdetails>,
-          loader: ()=> fetch('../gadgets.json')
-        },
-      ]
+        children: [
+          {
+            path: "/",
+            element: <Allgedgets></Allgedgets>,
+            loader: () => fetch("../gadgets.json"),
+          },
+          {
+            path: "/categories/:category",
+            element: <Categories></Categories>,
+            loader: () => fetch("../gadgets.json"),
+          },
+          {
+            path: "./gedget/:id",
+            element: <Productdetails></Productdetails>,
+            loader: () => fetch("../gadgets.json"),
+          },
+        ],
       },
       {
-        path:'/gedget/:id',
+        path: "/gedget/:id",
         element: <Productdetails></Productdetails>,
-        loader: ()=> fetch('../gadgets.json')
+        loader: () => fetch("../gadgets.json"),
       },
       {
-        path:'/static',
-        element: <Static></Static>
+        path: "/static",
+        element: <Static></Static>,
       },
       {
-        path:'/dashbord',
-        element:<Dashbord></Dashbord>
+        path: "/dashbord",
+        element: <Dashbord></Dashbord>,
+        children:[
+          {
+            path: "cart",
+            element: <Cart></Cart>,
+          },
+          {
+            path: "wiselist",
+            element: <Wiselist></Wiselist>,
+          },
+        ]
       },
       {
-        path:'/offer',
-        element: <Offer></Offer>
-      }
+        path: "/offer",
+        element: <Offer></Offer>,
+      },
     ],
-    
   },
 ]);
 
