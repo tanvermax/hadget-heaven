@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <>
-      {/* <div className="min-h-[650px] px-10  rounded-3xl text-center -mb-28 ">
+      <div className="min-h-[650px] px-10  rounded-3xl text-center -mb-28 ">
         <div className=" px-[300px] py-10 pb-52 bg-[#9538E2] rounded-b-3xl ">
           <Heading
             title={
@@ -31,7 +31,7 @@ const Home = () => {
         </div>
       </div>
       <h1 className="text-black text-center text-[40px] font-bold py-10">Explore Cutting-Edge Gadgets</h1>
-           */}
+          
       <div className="flex gap-5 px-32 ">
         <div className="flex-none w-[calc(100vw-80vw)] border-[2px] rounded-xl  ">
           <Allcat category={category}></Allcat>
