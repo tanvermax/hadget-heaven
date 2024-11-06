@@ -63,4 +63,8 @@ const addtoCartList = (id) => {
     }
 }
 
-export { addtostoredlist, getstoredeWiselist, getStoredCartList, addtoCartList }
+ const clearCartList = () => {
+    localStorage.clear(); // assuming 'cart' is the key where you store the cart items
+  };
+
+export { addtostoredlist, getstoredeWiselist, getStoredCartList, addtoCartList ,clearCartList}

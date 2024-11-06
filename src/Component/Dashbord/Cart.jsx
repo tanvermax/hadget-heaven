@@ -1,13 +1,17 @@
 import { HiMiniAdjustmentsVertical } from "react-icons/hi2";
-import { getStoredCartList } from "../MainLayout/addtoDB";
+import { clearCartList, getStoredCartList } from "../MainLayout/addtoDB";
 import { useLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { toast } from 'react-toastify';
+
 import Card from "./Card";
 import tickmar from './../../../photo/tick-mark.png'
+
 const Cart = () => {
   const [showlist, setShowlist] = useState([]);
   const cartproduct = useLoaderData();
 
+  
   useEffect(() => {
     const storedcartlist = getStoredCartList();
     const storedcartlistInt = storedcartlist.map((id) => parseInt(id));
@@ -15,6 +19,7 @@ const Cart = () => {
     const cartlist = cartproduct.filter((cart) =>
       storedcartlistInt.includes(parseInt(cart.id))
     );
+    
     setShowlist(cartlist);
   }, [cartproduct]);
 
@@ -22,6 +27,10 @@ const Cart = () => {
     .reduce((acc, product) => acc + parseFloat(product.price), 0)
     .toFixed(2);
 
+    const clearmoney=()=>{
+       localStorage.clear()
+      
+    }
   return (
     <>
       <div className="flex justify-between px-32 py-5">
@@ -58,7 +67,7 @@ const Cart = () => {
           <div className="modal-action mr-48 ">
             <form method="dialog mx-auto text-center">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn mx-auto">Close</button>
+              <button onClick={clearmoney} className="btn mx-auto">Close</button>
             </form>
           </div>
         </div>
