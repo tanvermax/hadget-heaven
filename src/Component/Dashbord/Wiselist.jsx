@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getstoredeWiselist } from "../MainLayout/addtoDB";
-import Allcard from "./../Allcategory/Allcard";
+
+import Card from "./Card";
 
 // import { Allcard } from "./../Allcategory/Allcard";d
 // import { Card } from "./Card";
@@ -20,6 +21,8 @@ const Wiselist = () => {
       
     setSeelist(WiseList);
   }, [wiseproduct,]);
+
+
   return (
     <>
       <div className="flex justify-between px-32 py-5">
@@ -28,13 +31,11 @@ const Wiselist = () => {
         </div>
       </div>
       <div className="border-2 rounded-xl p-5 mx-36">
-{/* {
-    seelist.map( list=> <Allcard  key={list.id} gedget={gedget}></Allcard>)
-} */}
+
 <div>
   {
-    seelist.map((gedget) => (
-      <Allcard key={gedget.id} gedget={gedget}></Allcard>
+    seelist.map((gedget) => ( <Card key={gedget.id} gedget={gedget} ></Card>
+     
     ) )
   }
 </div>
@@ -44,3 +45,4 @@ const Wiselist = () => {
 };
 
 export default Wiselist;
+{/* <Allcard key={gedget.id} gedget={gedget}></Allcard> */}

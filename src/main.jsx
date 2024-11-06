@@ -59,6 +59,8 @@ const router = createBrowserRouter([
           {
             path: "cart",
             element: <Cart></Cart>,
+            loader: ()=> fetch("../gadgets.json"),
+
           },
           {
             path: "wiselist",

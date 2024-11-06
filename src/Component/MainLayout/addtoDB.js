@@ -27,4 +27,31 @@ const addtostoredlist = (id) => {
     }
 }
 
-export { addtostoredlist,getstoredeWiselist }
+
+const getStoredCartList= ()=>{
+ const CartList= localStorage.getItem('cart-list');
+ if (CartList) {
+    const parsecartlist = JSON.parse(CartList);
+    return parsecartlist;   
+ }
+ else{
+    return [];
+ }
+}
+
+
+const addtoCartList= (id)=>{
+
+    const storedcartlist = getstoredeWiselist();
+    if (storedcartlist.includes(id)) {
+        console.log(id,'alredy exit');
+        
+    }
+else{
+    storedcartlist.push(id);
+    const storedcartlistStr = JSON.stringify(storedcartlist);
+    localStorage.setItem('cart-list',storedcartlistStr)
+}
+}
+
+export { addtostoredlist,getstoredeWiselist,getStoredCartList,addtoCartList }

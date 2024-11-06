@@ -5,7 +5,7 @@ import { LuShoppingCart } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
 
 import { Context } from "../MainLayout/Mainlayout";
-import { addtostoredlist } from "../MainLayout/addtoDB";
+import { addtoCartList, addtostoredlist } from "../MainLayout/addtoDB";
 
 const Productdetails = () => {
   const data = useLoaderData();
@@ -33,11 +33,12 @@ const Productdetails = () => {
     manufacturer,
   } = product;
 
-  const [cart, setCart] = useState([]);
-  const handlecardlist = (blog) => {
-    console.log("addding soon");
 
+  const handlecardlist = (id) => {
+    console.log("addding soon");
+    
     handleCart();
+    addtoCartList(id);
   };
 
   const [chosses, setChoose] = useContext(Context);
@@ -59,6 +60,7 @@ const Productdetails = () => {
 
   const handleWise=(id)=>{
     addtostoredlist(id)
+    
   }
 
   return (
@@ -139,7 +141,7 @@ const Productdetails = () => {
             </div>
             <div className="flex gap-5">
               <button
-                onClick={handlecardlist}
+                onClick={()=>handlecardlist(id)}
                 className="btn btn-primary transition hover:scale-105"
               >
                 Add To Card
