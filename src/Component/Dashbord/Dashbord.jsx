@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import Heading from "../Home/Pages/Heading";
+import Cart from "./Cart";
 
 const Dashbord = () => {
   return (
@@ -43,6 +44,7 @@ const Dashbord = () => {
 
       
     </div>
+   
     <Outlet></Outlet>
     </>
   );

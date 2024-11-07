@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 
-const Navber = ({chosses}) => {
+const Navber = ({ chosses }) => {
   return (
     <div className="navbar px-32 py-5  bg-[#9538E2] rounded-t-3xl ">
       <div className="navbar-start">
@@ -77,23 +77,31 @@ const Navber = ({chosses}) => {
             }
             to={"/offer"}
           >
-            <li className="px-5 text-base font-medium">Become a Gadget seller</li>
+            <li className="px-5 text-base font-medium">
+              Become a Gadget seller
+            </li>
           </NavLink>
         </ul>
       </div>
       <div className="navbar-end gap-3">
-        <button className="btn btn-ghost btn-circle bg-white text-2xl">
-          <IoCartOutline />
-          <div className="indicator  relative -top-3">
-            <span className="badge badge-sm p-2 badge-primary indicator-item">{chosses}</span>
-          </div>
-        </button>
+        <Link to={'./dashbord/dashbord'}>
+          <button className="btn btn-ghost btn-circle bg-white text-2xl">
+            <IoCartOutline />
+            <div className="indicator  relative -top-3">
+              <span className="badge badge-sm p-2 badge-primary indicator-item">
+                {chosses}
+              </span>
+            </div>
+          </button>
+        </Link>
+        <Link to={'./dashbord/wiselist'}>
         <button className="btn btn-ghost btn-circle bg-white text-2xl">
           <div className="indicator">
             <span className="badge badge-xs badge-primary indicator-item"></span>{" "}
             <FaRegHeart />
           </div>
-        </button>
+        </button></Link>
+
       </div>
     </div>
   );
