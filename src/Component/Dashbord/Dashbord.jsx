@@ -15,7 +15,7 @@ const Dashbord = () => {
 
         <div className="flex gap-6 justify-center ">
           <NavLink
-            to={"./cart"}
+            to={"./dashbord"}
             className={({ isActive }) =>
               `  ${
                 isActive

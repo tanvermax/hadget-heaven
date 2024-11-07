@@ -66,7 +66,7 @@ const router = createBrowserRouter([
         errorElement:<Error></Error>,
         children:[
           {
-            path: "cart",
+            path: "dashbord",
             element: <Cart></Cart>,
             errorElement:<Error></Error>,
             loader: ()=> fetch("../gadgets.json"),

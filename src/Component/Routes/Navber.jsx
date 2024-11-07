@@ -77,7 +77,7 @@ const Navber = ({chosses}) => {
             }
             to={"/offer"}
           >
-            <li className="px-5 text-base font-medium">Offer</li>
+            <li className="px-5 text-base font-medium">Become a Gadget seller</li>
           </NavLink>
         </ul>
       </div>
