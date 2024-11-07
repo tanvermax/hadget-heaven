@@ -68,3 +68,8 @@ React Router for navigation.
 Context API for state management across components.
 CSS/Bootstrap for styling and responsive design.
 Chart.js (or similar library) for the sales rate line chart visualization.
+
+
+Deployment
+This project is deployed on Netlify.[heck it out here](https://beautiful-begonia-be53e8.netlify.app/)
+
