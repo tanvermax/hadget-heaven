@@ -1,7 +1,7 @@
 import Heading from "./Pages/Heading";
 import bgimd from "./../../../photo/banner.jpg";
 import { Outlet, useLoaderData } from "react-router-dom";
-
+import Allcat from "../Allcategory/Allcat";
 const Home = () => {
   const category = useLoaderData();
   // console.log(category);
@@ -35,7 +35,8 @@ const Home = () => {
           
       <div className="flex gap-5 px-32 ">
         <div className="flex-none w-[calc(100vw-80vw)] border-[2px] rounded-xl  ">
-          <Allcat category={category}></Allcat>
+          <Allcat  category={category}></Allcat>
+        
         </div>
         <div className="flex-1 border-[2px] rounded-xl">
           <Outlet></Outlet>
