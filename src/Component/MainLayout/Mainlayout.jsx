@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "../Routes/Footer";
 import Navber from "../Routes/Navber";
 import { createContext, useState } from "react";
-
+import { HelmetProvider } from "react-helmet-async";
 export const Context = createContext();
 
 const Mainlayout = () => {
@@ -15,6 +15,8 @@ const Mainlayout = () => {
 
   
   return (
+    <HelmetProvider>
+    {/* Other components, routes, etc. */}
     
     <Context.Provider value={[chosses, setChoose]}>
       <div className="">
@@ -27,6 +29,8 @@ const Mainlayout = () => {
       </div>
       <ToastContainer />
     </Context.Provider>
+    </HelmetProvider>
+    
   );
 };
 

@@ -9,6 +9,7 @@ import {
   Legend,
   Bar,
 } from "recharts";
+import { Helmet } from "react-helmet-async";
 
 const Static = () => {
   const data = [
@@ -30,6 +31,10 @@ const Static = () => {
   ];
   return (
     <>
+  
+      <Helmet>
+        <title>cart </title>
+        </Helmet>
       <div className=" py-5 border-2 my-10 mx-32">
         <BarChart width={1600} height={550} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
@@ -41,6 +46,8 @@ const Static = () => {
           <Bar dataKey="product" fill="#82ca9d" />
         </BarChart>
       </div>
+      
+     
     </>
   );
 };

@@ -7,6 +7,7 @@ import Home from "./Component/Home/Home";
 
 import Allgedgets from "./Component/Allcategory/Allgedgets";
 
+
 import Static from "./Component/Static/Static";
 import Dashbord from "./Component/Dashbord/Dashbord";
 import Offer from "./Component/Offer/Offer";
@@ -97,7 +98,9 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")).render(
+
   <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>
+
 );
