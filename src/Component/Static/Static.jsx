@@ -31,9 +31,9 @@ const Static = () => {
   return (
     <>
       <div className=" py-5 border-2 my-10 mx-32">
-        <BarChart width={1300} height={550} data={data}>
+        <BarChart width={1600} height={550} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
+          <XAxis dataKey="product" />
           <YAxis />
           <Tooltip />
           <Legend />
