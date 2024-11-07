@@ -1,30 +1,32 @@
 import { HiMiniAdjustmentsVertical } from "react-icons/hi2";
-import { clearCartList, getStoredCartList, removewise } from "../MainLayout/addtoDB";
-import { useLoaderData } from "react-router-dom";
+import {
+  
+  getStoredCartList,
+  removewise,
+} from "../MainLayout/addtoDB";
+import { Link, useLoaderData, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-
 import Card from "./Card";
-import tickmar from './../../../photo/tick-mark.png'
+import tickmar from "./../../../photo/tick-mark.png";
+import { Helmet } from "react-helmet-async";
 
 const Cart = () => {
+  const navigate = useNavigate();
 
-const handleremove= id=>{
-  removewise(id);
-  const favorite= getStoredCartList();
-  const updatedCartList = cartproduct.filter(cart =>
-    favorite.includes(cart.id)
-);
+  const handleremove = (id) => {
+    removewise(id);
+    const favorite = getStoredCartList();
+    const updatedCartList = cartproduct.filter((cart) =>
+      favorite.includes(cart.id)
+    );
 
-
-setShowlist(updatedCartList);
-}
-
+    setShowlist(updatedCartList);
+  };
 
   const [showlist, setShowlist] = useState([]);
   const cartproduct = useLoaderData();
 
-  
   useEffect(() => {
     const storedcartlist = getStoredCartList();
     const storedcartlistInt = storedcartlist.map((id) => parseInt(id));
@@ -32,7 +34,7 @@ setShowlist(updatedCartList);
     const cartlist = cartproduct.filter((cart) =>
       storedcartlistInt.includes(parseInt(cart.id))
     );
-    
+
     setShowlist(cartlist);
   }, [cartproduct]);
 
@@ -40,13 +42,19 @@ setShowlist(updatedCartList);
     .reduce((acc, product) => acc + parseFloat(product.price), 0)
     .toFixed(2);
 
-    const clearmoney=()=>{
-       localStorage.clear()
-       
-    }
+  const clearmoney = () => {
+    localStorage.clear();
+
+    navigate("/");
+  };
   return (
     <>
+   
+<Helmet>
+<title>Gadget Heaven - Cart</title>
+</Helmet>
       <div className="flex justify-between px-32 py-5">
+      
         <div>
           <h1 className="text-2xl font-bold">Cart</h1>
         </div>
@@ -68,19 +76,25 @@ setShowlist(updatedCartList);
       </div>
       <div className="border-2 rounded-xl p-5 mx-36">
         {showlist.map((gedget) => (
-          <Card handleremove={handleremove} key={gedget.id} gedget={gedget}></Card>
+          <Card
+            handleremove={handleremove}
+            key={gedget.id}
+            gedget={gedget}
+          ></Card>
         ))}
       </div>
 
       <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
         <div className="modal-box items-center mx-auto text-center">
-            <img src={tickmar} className="w-[200px] mx-auto" alt="" />
+          <img src={tickmar} className="w-[200px] mx-auto" alt="" />
           <h3 className="font-bold text-lg">Payment Successfully</h3>
           <p className="py-4">Thanks for purchasing. Total:2449.96</p>
           <div className="modal-action mr-48 ">
             <form method="dialog mx-auto text-center">
               {/* if there is a button in form, it will close the modal */}
-              <button onClick={clearmoney} className="btn mx-auto">Close</button>
+              <Link to={'/'}><button  onClick={clearmoney} className="btn mx-auto">
+                Close
+              </button></Link>
             </form>
           </div>
         </div>

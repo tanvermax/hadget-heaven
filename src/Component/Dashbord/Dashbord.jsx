@@ -1,12 +1,18 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { BrowserRouter, NavLink, Outlet } from "react-router-dom";
 import Heading from "../Home/Pages/Heading";
 import Cart from "./Cart";
 
 const Dashbord = () => {
+
+<BrowserRouter>
+</BrowserRouter>
+
+
+
   return (
     <>
     <div>
-      <div className="bg-[#9538E2] -mt-10 py-10 px-56 mx-auto">
+      <div className="bg-[#9538E2] py-10 px-56 mx-auto">
         <Heading
           title={"Dashboard"}
           subtitle={
@@ -16,7 +22,7 @@ const Dashbord = () => {
 
         <div className="flex gap-6 justify-center ">
           <NavLink
-            to={"./dashbord"}
+            to={"/dashbord"}
             className={({ isActive }) =>
               `  ${
                 isActive
@@ -44,7 +50,7 @@ const Dashbord = () => {
 
       
     </div>
-   
+
     <Outlet></Outlet>
     </>
   );

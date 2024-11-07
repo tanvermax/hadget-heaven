@@ -15,6 +15,7 @@ const Mainlayout = () => {
 
   
   return (
+    
     <Context.Provider value={[chosses, setChoose]}>
       <div className="">
         <div className="px-10 pt-5">

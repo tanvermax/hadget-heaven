@@ -85,9 +85,6 @@ const handlmoney= ()=>{
 
             <p className="font-semibold text-base "> Price : $ {price}</p>
 
-            {/* <MyContext.provider value={{chosses,setChoose}} > */}
-            <p className="font-semibold text-base "> Price : {newp}$ </p>
-            {/* </MyContext.provider> */}
 
             <p className="font-semibold text-base ">
               {" "}

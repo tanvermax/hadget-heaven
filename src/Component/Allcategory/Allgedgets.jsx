@@ -1,9 +1,9 @@
-import {  useLoaderData, useNavigate } from "react-router-dom";
+import {  useLoaderData,  } from "react-router-dom";
 import Allcard from "./Allcard";
 // import { useEffect, useState } from "react";
 
 const Allgedgets = () => {
-  const navigate= useNavigate();
+  // const navigate= useNavigate();
   const data = useLoaderData();
 
   // const [product, newProduct]= useState([]);
@@ -24,7 +24,7 @@ const Allgedgets = () => {
           <Allcard key={gedget.id} gedget={gedget}></Allcard>
         ))}
 
-        <button onClick={()=> navigate('/')} className="text-center text-2xl btn bg-[#e6a417]">view all</button>
+        {/* <button onClick={()=> navigate("/")} className="text-center text-2xl btn bg-[#e6a417]">view all</button> */}
       </div>
     </div>
   );

@@ -1,10 +1,24 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 
+
+
+
 const Navber = ({ chosses }) => {
+
+const location = useLocation();
+
+const backgroundColor = location.pathname === "/static"
+? "#ffff" // Change to desired color for Static page
+: location.pathname === "/dashbord"
+? "#fffff" // Change to desired color for Dashboard page
+: location.pathname === "/offer"
+? "#ffff" // Change to desired color for Offer page
+: "#9538E2";
+
   return (
-    <div className="navbar px-32 py-5  bg-[#9538E2] rounded-t-3xl ">
+    <div className="navbar px-32 py-5   rounded-t-3xl "  style={{ backgroundColor: backgroundColor }}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -45,9 +59,9 @@ const Navber = ({ chosses }) => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <NavLink
+          <NavLink onClick={onclick}
             className={({ isActive }) =>
-              ` font-bold ${isActive ? "text-[#ffffff]" : "hover:text-warning"}`
+              ` font-bold ${isActive ? "text-[#ffffff]" : "hover:text-white"}`
             }
             to={"/"}
           >
@@ -56,7 +70,7 @@ const Navber = ({ chosses }) => {
           <NavLink
             className={({ isActive }) =>
               `font-bold hover:text-blue  ${
-                isActive ? "text-white" : "hover:text-blue"
+                isActive ? "text-[#9538E2]" : "hover:text-white"
               }`
             }
             to={"/static"}
@@ -65,7 +79,7 @@ const Navber = ({ chosses }) => {
           </NavLink>
           <NavLink
             className={({ isActive }) =>
-              `hover:text-blue-700 ${isActive ? "text-white" : ""}`
+              `hover:text-white ${isActive ? "text-[#9538E2]" : ""}`
             }
             to={"/dashbord"}
           >
@@ -73,7 +87,7 @@ const Navber = ({ chosses }) => {
           </NavLink>
           <NavLink
             className={({ isActive }) =>
-              `hover:text-blue-700 ${isActive ? "text-white" : ""}`
+              `hover:text-white ${isActive ? "text-[#9538E2]" : ""}`
             }
             to={"/offer"}
           >
@@ -84,7 +98,7 @@ const Navber = ({ chosses }) => {
         </ul>
       </div>
       <div className="navbar-end gap-3">
-        <Link to={'./dashbord/dashbord'}>
+        <Link to={'./dashbord'}>
           <button className="btn btn-ghost btn-circle bg-white text-2xl">
             <IoCartOutline />
             <div className="indicator  relative -top-3">

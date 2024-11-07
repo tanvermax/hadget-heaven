@@ -1,10 +1,11 @@
 import Heading from "./Pages/Heading";
 import bgimd from "./../../../photo/banner.jpg";
 import { Outlet, useLoaderData } from "react-router-dom";
-import Allcat from "../Allcategory/Allcat";
+
 const Home = () => {
   const category = useLoaderData();
   // console.log(category);
+
 
   return (
     <>
