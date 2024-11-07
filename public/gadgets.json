@@ -115,7 +115,7 @@
     "id": "7",
     "title": "Foldable Smartphone X",
     "image": "https://i.ibb.co.com/VtQXbC3/pexels-craigmdennis-205421.jpg",
-    "category": "Phones",
+    "category": "Laptop",
     "price": 1300,
     "description": "Innovative foldable smartphone with dual displays and advanced camera.",
     "specification": [
@@ -203,7 +203,7 @@
     "id": "12",
     "title": "Wireless Earbuds Pro",
     "image": "https://i.ibb.co.com/f9Vg2kz/1111.webp",
-    "category": "Accessories",
+    "category": "Laptop",
     "price": 150,
     "description": "Compact wireless earbuds with immersive sound and noise isolation.",
     "specification": [
@@ -310,6 +310,42 @@
     "availability": true,
     "rating": 4.6,
     "manufacturer": "OnePlus",
+    "in_stock": true,
+    "offer": "20% off"
+  },{
+    "id": "18",
+    "title": "HP 2024",
+    "image": "https://i.ibb.co.com/VtQXbC3/pexels-craigmdennis-205421.jpg",
+    "category": "Laptop",
+    "price": 1300,
+    "description": "Innovative foldable smartphone with dual displays and advanced camera.",
+    "specification": [
+      "256GB storage",
+      "12GB RAM",
+      "Foldable dual display",
+      "5G enabled"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "manufacturer": "InnovateTech",
+    "in_stock": true,
+    "offer": "20% off"
+  },{
+    "id": "18",
+    "title": "Dell 7 octa core",
+    "image": "https://i.ibb.co.com/VtQXbC3/pexels-craigmdennis-205421.jpg",
+    "category": "Laptop",
+    "price": 1300,
+    "description": "Innovative foldable smartphone with dual displays and advanced camera.",
+    "specification": [
+      "256GB storage",
+      "12GB RAM",
+      "Foldable dual display",
+      "5G enabled"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "manufacturer": "InnovateTech",
     "in_stock": true,
     "offer": "20% off"
   }

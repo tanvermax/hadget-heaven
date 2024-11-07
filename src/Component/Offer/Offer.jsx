@@ -3,7 +3,7 @@ import Heading from "../Home/Pages/Heading";
 const Offer = () => {
   return (
     <div className="bg-[#913be2] px-32 py-4 flex justify-between items-center">
-      <div className=" items-center">
+      <div className=" -mt-32 items-center">
         <Heading
           title={"Become A Gadgest Seller Today!"}
           subtitle={
