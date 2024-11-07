@@ -67,4 +67,26 @@ const addtoCartList = (id) => {
     localStorage.clear(); // assuming 'cart' is the key where you store the cart items
   };
 
-export { addtostoredlist, getstoredeWiselist, getStoredCartList, addtoCartList ,clearCartList}
+
+  const removeFavorite = (id) => {
+    const favorite = getStoredCartList();
+ 
+    const remined = favorite.filter(favId => favId !== id);
+    localStorage.setItem('cart-list', JSON.stringify(remined));
+    toast.success("Successfully removed");
+};
+
+const removewise = (id) => {
+    const favorite = getstoredeWiselist();
+ 
+    const remined = favorite.filter(favId => favId !== id);
+    localStorage.setItem('wise-list', JSON.stringify(remined));
+    toast.success("Successfully removed");
+};
+
+
+
+
+
+
+export { addtostoredlist, getstoredeWiselist,removeFavorite,removewise, getStoredCartList, addtoCartList ,clearCartList}

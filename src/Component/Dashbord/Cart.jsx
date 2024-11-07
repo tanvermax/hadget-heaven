@@ -1,13 +1,26 @@
 import { HiMiniAdjustmentsVertical } from "react-icons/hi2";
-import { clearCartList, getStoredCartList } from "../MainLayout/addtoDB";
+import { clearCartList, getStoredCartList, removewise } from "../MainLayout/addtoDB";
 import { useLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { toast } from 'react-toastify';
+
 
 import Card from "./Card";
 import tickmar from './../../../photo/tick-mark.png'
 
 const Cart = () => {
+
+const handleremove= id=>{
+  removewise(id);
+  const favorite= getStoredCartList();
+  const updatedCartList = cartproduct.filter(cart =>
+    favorite.includes(cart.id)
+);
+
+
+setShowlist(updatedCartList);
+}
+
+
   const [showlist, setShowlist] = useState([]);
   const cartproduct = useLoaderData();
 
@@ -29,7 +42,7 @@ const Cart = () => {
 
     const clearmoney=()=>{
        localStorage.clear()
-      
+       
     }
   return (
     <>
@@ -55,7 +68,7 @@ const Cart = () => {
       </div>
       <div className="border-2 rounded-xl p-5 mx-36">
         {showlist.map((gedget) => (
-          <Card key={gedget.id} gedget={gedget}></Card>
+          <Card handleremove={handleremove} key={gedget.id} gedget={gedget}></Card>
         ))}
       </div>
 

@@ -1,8 +1,10 @@
 Gadgets Heaven
+
 Welcome to Gadgets Heaven, a comprehensive e-commerce platform where users can explore and purchase a wide range of tech products like smartphones, laptops, iPhones, and smartwatches. This application provides a seamless browsing experience, with options to view product details, add items to a wishlist, track sales rates, and more. It also offers an easy way to become a seller on the platform.
 
-Live Demo on Netlify
+
 Features
+
 Navigation
 4 Navigation Options: Smooth navigation across the application with the following pages:
 Home: Discover featured products and categories.
@@ -17,18 +19,24 @@ Smartphones
 Laptops
 iPhones
 Smartwatches
+
 Product Details & Specification
+
 Each product has a "See Details" option, where users can view:
 Product Specifications: Information about product features, hardware, and performance.
 Buy Option: Users can directly purchase the product from the detail page.
 Wishlist
+
 Add to Wishlist: Users can add products to their wishlist for future reference.
 Wishlist Overview: A dedicated page to view all items saved by the user.
+
+
 Sales Rate Line Chart
+
 Sales Tracking: A line chart that visualizes the sales rate over time, helping users monitor popular products and trends.Tech Marketplace
 Welcome to Tech Marketplace, a comprehensive e-commerce platform where users can explore and purchase a wide range of tech products like smartphones, laptops, iPhones, and smartwatches. This application provides a seamless browsing experience, with options to view product details, add items to a wishlist, and more. It also offers an easy way to become a seller on the platform.
 
-Live Demo on Netlify
+
 Features
 Navigation
 4 Navigation Options: Smooth navigation across the application with the following pages:
