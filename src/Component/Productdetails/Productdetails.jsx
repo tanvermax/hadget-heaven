@@ -6,6 +6,8 @@ import { CiHeart } from "react-icons/ci";
 
 import { Context } from "../MainLayout/Mainlayout";
 import { addtoCartList, addtostoredlist } from "../MainLayout/addtoDB";
+import { Helmet } from "react-helmet-async";
+
 
 const Productdetails = () => {
   const data = useLoaderData();
@@ -65,6 +67,9 @@ const handlmoney= ()=>{
   return (
     <>
       <div className="bg-[#9538E2] -mt-10 pb-40">
+      <Helmet>
+        <title>product - Gadgets Heaven</title>
+      </Helmet>
         <Heading
           title={"Product Details"}
           subtitle={

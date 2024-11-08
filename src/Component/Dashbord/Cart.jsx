@@ -1,9 +1,5 @@
 import { HiMiniAdjustmentsVertical } from "react-icons/hi2";
-import {
-  
-  getStoredCartList,
-  removewise,
-} from "../MainLayout/addtoDB";
+import { getStoredCartList, removewise } from "../MainLayout/addtoDB";
 import { Link, useLoaderData, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -49,12 +45,10 @@ const Cart = () => {
   };
   return (
     <>
-   
-<Helmet>
-<title>Gadget Heaven - Cart</title>
-</Helmet>
+      <Helmet>
+        <title>dashbord-cart :Gadget Heaven - Cart</title>
+      </Helmet>
       <div className="flex justify-between px-32 py-5">
-      
         <div>
           <h1 className="text-2xl font-bold">Cart</h1>
         </div>
@@ -92,9 +86,11 @@ const Cart = () => {
           <div className="modal-action mr-48 ">
             <form method="dialog mx-auto text-center">
               {/* if there is a button in form, it will close the modal */}
-              <Link to={'/'}><button  onClick={clearmoney} className="btn mx-auto">
-                Close
-              </button></Link>
+              <Link to={"/"}>
+                <button onClick={clearmoney} className="btn mx-auto">
+                  Close
+                </button>
+              </Link>
             </form>
           </div>
         </div>

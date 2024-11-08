@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getstoredeWiselist, removewise } from "../MainLayout/addtoDB";
-
+import { Helmet } from "react-helmet-async";
 import Card from "./Card";
 
 // import { Allcard } from "./../Allcategory/Allcard";d
@@ -46,6 +46,9 @@ const Wiselist = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Wiselist -Gadgets Heaven</title>
+      </Helmet>
       <div className="flex justify-between px-32 py-5">
         <div>
           <h1 className="text-2xl font-bold">WiseList :{seelist.length}</h1>

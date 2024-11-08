@@ -1,7 +1,7 @@
 import { BrowserRouter, NavLink, Outlet } from "react-router-dom";
 import Heading from "../Home/Pages/Heading";
 import Cart from "./Cart";
-
+import { Helmet } from "react-helmet-async";
 const Dashbord = () => {
 
 <BrowserRouter>
@@ -11,7 +11,11 @@ const Dashbord = () => {
 
   return (
     <>
+     
     <div>
+    <Helmet>
+        <title>Dashbord -Gadgets Heaven</title>
+      </Helmet>
       <div className="bg-[#9538E2] py-10 px-56 mx-auto">
         <Heading
           title={"Dashboard"}

@@ -2,6 +2,7 @@ import Heading from "./Pages/Heading";
 import bgimd from "./../../../photo/banner.jpg";
 import { Outlet, useLoaderData } from "react-router-dom";
 import Allcat from "../Allcategory/Allcat";
+import { Helmet } from "react-helmet-async";
 const Home = () => {
   const category = useLoaderData();
   // console.log(category);
@@ -9,7 +10,11 @@ const Home = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Home - Gadgets Heaven</title>
+      </Helmet>
       <div className="min-h-[650px] px-10  rounded-3xl text-center -mb-28 ">
+      
         <div className=" px-[300px] py-10 pb-52 bg-[#9538E2] rounded-b-3xl ">
           <Heading
             title={

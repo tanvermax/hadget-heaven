@@ -1,8 +1,11 @@
 import Heading from "../Home/Pages/Heading";
-
+import { Helmet } from "react-helmet-async";
 const Offer = () => {
   return (
     <div className="bg-[#913be2] px-32 py-4 flex justify-between items-center">
+       <Helmet>
+        <title>SELLER - Gadgets Heaven</title>
+      </Helmet>
       <div className=" -mt-32 items-center">
         <Heading
           title={"Become A Gadgest Seller Today!"}
@@ -51,7 +54,7 @@ const Offer = () => {
                   </label>
                 </div>
                 <div className="form-control mt-6">
-                  <button className="btn btn-primary">Login</button>
+                  <button className="btn bg-[#913be2]">Login</button>
                 </div>
               </form>
             </div>

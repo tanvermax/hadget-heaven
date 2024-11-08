@@ -11,6 +11,7 @@ import {
 } from "recharts";
 import { Helmet } from "react-helmet-async";
 
+
 const Static = () => {
   const data = [
     { product: "iphone", sales_rate: 1080 },
@@ -31,10 +32,9 @@ const Static = () => {
   ];
   return (
     <>
-  
       <Helmet>
-        <title>cart </title>
-        </Helmet>
+        <title>Static - Gadgets Heaven</title>
+      </Helmet>
       <div className=" py-5 border-2 my-10 mx-32">
         <BarChart width={1600} height={550} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
@@ -46,7 +46,6 @@ const Static = () => {
           <Bar dataKey="product" fill="#82ca9d" />
         </BarChart>
       </div>
-      
      
     </>
   );
