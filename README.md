@@ -82,5 +82,5 @@ requirment document link : [Requirements Document](./Batch-10_Assignment-08-.pdf
 
 
 Deployment
-This project is deployed on Netlify.[heck it out here](https://beautiful-begonia-be53e8.netlify.app/)
+This project is deployed on Netlify.[heck it out here](https://magnificent-palmier-9964b3.netlify.app/)
 
