@@ -77,6 +77,9 @@ Context API for state management across components.
 CSS/Bootstrap for styling and responsive design.
 Chart.js (or similar library) for the sales rate line chart visualization.
 
+requirment document link : [Requirements Document](./Batch-10_Assignment-08-.pdf)
+
+
 
 Deployment
 This project is deployed on Netlify.[heck it out here](https://beautiful-begonia-be53e8.netlify.app/)
