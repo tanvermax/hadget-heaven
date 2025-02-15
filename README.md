@@ -1,4 +1,4 @@
-#Gadgets Heaven
+# Gadgets Heaven
 
 Welcome to Gadgets Heaven, a comprehensive e-commerce platform where users can explore and purchase a wide range of tech products like smartphones, laptops, iPhones, and smartwatches. This application provides a seamless browsing experience, with options to view product details, add items to a wishlist, track sales rates, and more. It also offers an easy way to become a seller on the platform.
 
